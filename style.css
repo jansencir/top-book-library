@@ -164,7 +164,11 @@ legend,
     font-weight: 700;
 }
 
-.radio-input {
+.read-status-radio > div {
+    display: inline-block;
+}
+
+.read-status-radio > div > label {
     font-weight: 400;
 }
 
