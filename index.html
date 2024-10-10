@@ -15,7 +15,7 @@
 <body>
     <h1 class="title">My Library of Books</h1>
     <div class="form-container">
-        <form class="new-book-form">
+        <form class="new-book-form" onsubmit="addBookToLibrary(); clearForm(); return false;">
             <div class="title-container">
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title" required>

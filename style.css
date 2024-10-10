@@ -203,7 +203,7 @@ fieldset {
     background-color: var(--light-pink);
 }
 
-.add-book-btn:focus {
+.add-book-btn:hover:focus {
     background-color: var(--darker-light-pink);
 }
 
