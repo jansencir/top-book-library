@@ -25,14 +25,18 @@
 
 
 /* General Styles */
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Libre Baskerville", sans-serif;
 }
 
-
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
 
 img {
     height: 1.5rem;
