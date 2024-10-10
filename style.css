@@ -137,9 +137,12 @@ body {
 }
 
 .title {
-    font-size: 2rem;
     text-align: center;
     margin: 1rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0.1rem 0.1rem 0.2rem #000000;
+    font-weight: 900;
 }
 
 .form-container,
@@ -155,8 +158,8 @@ body {
 
 label,
 legend {
-    color: white;
-    text-shadow: 0.05rem 0.05rem 0.1rem black;
+    color: #ffffff;
+    text-shadow: 0.05rem 0.05rem 0.1rem #000000;
     font-weight: 700;
 }
 
@@ -176,7 +179,7 @@ input {
     border: 1px solid var(--darker-light-pink);
     border-radius: 1rem;
     font-size: 1rem;
-    color: white;
+    color: #ffffff;
     text-shadow: 0.05rem 0.05rem 0.2rem black;
     font-weight: 700;
 }
