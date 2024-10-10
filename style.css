@@ -173,6 +173,15 @@ input {
     border-radius: 0.5rem;
 }
 
+form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 0;
+}
+
 .add-book-btn {
     align-self: center;
     width: 100%;
@@ -198,16 +207,6 @@ input {
     grid-template-columns: 40% 20% 10% 15% 5% 5%;
     gap: 1%;
 }
-
-form > div {
-    display: flex;
-    flex-direction: column;
-}
-
-fieldset {
-    border: 0;
-}
-
 
 img {
     height: 1.5rem;
