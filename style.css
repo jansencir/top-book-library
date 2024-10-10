@@ -117,7 +117,7 @@
 /* Color Codes */
 :root {
     --light-blue: #BAE2F9;
-    --lighter-light-blue: #EAF4FC;
+    --lighter-light-blue: #E0F3FF;
     --darker-light-blue: #74ACE4;
     --light-pink: #F9DCE5;
     --darker-light-pink: #F5C4D4;
@@ -157,7 +157,8 @@ body {
 }
 
 label,
-legend {
+legend,
+.column-titles > div {
     color: #ffffff;
     text-shadow: 0.05rem 0.05rem 0.1rem #000000;
     font-weight: 700;
@@ -185,6 +186,7 @@ fieldset {
 .add-book-btn {
     align-self: center;
     width: 100%;
+    background-color: #ffffff;
     border: 1px solid var(--darker-light-pink);
     border-radius: 1rem;
     font-size: 1rem;
@@ -206,6 +208,25 @@ fieldset {
     display: grid;
     grid-template-columns: 40% 20% 10% 15% 5% 5%;
     gap: 1%;
+}
+
+.new-entry {
+    background-color: var(--darker-light-blue);
+    height: 2rem;
+    align-items: center;
+}
+
+.new-entry > div {
+    padding-left: 0.1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 0.05rem 0.05rem 0.2rem black;
+}
+
+.entry-edit,
+.entry-delete {
+    display: flex;
+    align-items: center;
 }
 
 img {
