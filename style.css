@@ -153,6 +153,11 @@ body {
     gap: 1%;
 }
 
+input {
+    padding: 0.1rem 0.3rem;
+    border: 2px solid var(--darker-light-pink);
+    border-radius: 0.5rem;
+}
 
 .add-book-btn {
     align-self: center;
