@@ -120,6 +120,7 @@
     --lighter-light-blue: #EAF4FC;
     --darker-light-blue: #74ACE4;
     --light-pink: #F9DCE5;
+    --darker-light-pink: #F5C4D4;
 }
 
 
@@ -150,6 +151,23 @@ body {
     display: grid;
     grid-template-columns: 40% 20% 10% 15% 10%;
     gap: 1%;
+}
+
+
+.add-book-btn {
+    align-self: center;
+    width: 100%;
+    border: 1px solid var(--darker-light-pink);
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.add-book-btn:hover {
+    background-color: var(--light-pink);
+}
+
+.add-book-btn:focus {
+    background-color: var(--darker-light-pink);
 }
 
 .column-titles,
