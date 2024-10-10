@@ -152,7 +152,8 @@ body {
     gap: 1%;
 }
 
-.column-titles {
+.column-titles,
+.new-entry {
     display: grid;
     grid-template-columns: 40% 20% 10% 15% 5% 5%;
     gap: 1%;
