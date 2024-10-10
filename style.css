@@ -38,7 +38,27 @@
     margin: 1rem 0;
 }
 
+.form-container,
+.books-container {
+    margin: 1.5rem 4.5rem;
+}
 
+.new-book-form {
+    display: grid;
+    grid-template-columns: 40% 20% 10% 15% 10%;
+    gap: 1%;
+}
+
+.column-titles {
+    display: grid;
+    grid-template-columns: 40% 20% 10% 15% 5% 5%;
+    gap: 1%;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
 
 fieldset {
     border: 0;
