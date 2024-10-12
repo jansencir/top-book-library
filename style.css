@@ -224,7 +224,7 @@ fieldset {
     padding-left: 0.1rem;
     font-size: 1rem;
     color: #ffffff;
-    text-shadow: 0.05rem 0.05rem 0.2rem black;
+    text-shadow: 0.05rem 0.05rem 0.15rem black;
 }
 
 .book-entries>div:nth-child(even) {
