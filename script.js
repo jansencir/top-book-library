@@ -146,19 +146,76 @@ function clearForm() {
 // // edit btn
 // const editImgDiv = document.createElement("div");
 // const editImg = document.createElement("img");
+// editImgDiv.classList.add("entry-edit")
 // editImg.src = "./icons/book-edit-outline.svg";
 // editImgDiv.appendChild(editImg);
 
 // // delete btn
 // const deleteImgDiv = document.createElement("div");
 // const deleteImg = document.createElement("img");
+// deleteImgDiv.classList.add("entry-delete")
 // deleteImg.src = "./icons/book-remove-outline.svg";
 // deleteImgDiv.appendChild(deleteImg);
 
 // outerDiv.append(innerDiv, innerInnerDiv, innerInnerInnerDiv, innerInnerInnerInnerDiv, editImgDiv, deleteImgDiv);
-// ---------------------------------------------------------------
+// // ---------------------------------------------------------------
 
 // bookLog.appendChild(outerDiv);
+
+
+function displayBook() {
+    for (let i = 0; i < myLibrary.length; i++) {
+        let book = myLibrary[i];
+        
+        // container for new book
+
+        const newEntryDiv = document.createElement("div");
+        newEntryDiv.classList.add("new-entry");
+
+        // title
+        const newTitleDiv = document.createElement("div");
+        newTitleDiv.textContent = book.title;
+
+        // author
+        const newAuthorDiv = document.createElement("div");
+        newAuthorDiv.textContent = book.author;
+
+        // page count
+        const newPageDiv = document.createElement("div");
+        newPageDiv.textContent = book.pages;
+
+        // read status
+        const newStatusDiv = document.createElement("div");
+        newStatusDiv.textContent = book.read;
+
+        // edit button
+        const editImgDiv = document.createElement("div");
+        const editImg = document.createElement("img");
+        editImgDiv.classList.add("entry-edit")
+        editImg.src = "./icons/book-edit-outline.svg";
+        editImgDiv.appendChild(editImg);
+
+        // delete button
+        const deleteImgDiv = document.createElement("div");
+        const deleteImg = document.createElement("img");
+        deleteImgDiv.classList.add("entry-delete")
+        deleteImg.src = "./icons/book-remove-outline.svg";
+        deleteImgDiv.appendChild(deleteImg);
+
+        newEntryDiv.append(newTitleDiv, newAuthorDiv, newPageDiv, newStatusDiv, editImgDiv, deleteImgDiv);
+
+        bookLog.appendChild(newEntryDiv);
+    }
+};
+
+function displayTest() {
+    for (let i = 0; i < myLibrary.length; i++) {
+        console.log(myLibrary[i].title)
+        console.log(myLibrary[i].author)
+        console.log(myLibrary[i].pages)
+        console.log(myLibrary[i].read)
+    }
+};
 
 
 // newEntry.textContent = "THE DIV IS RIGHT HERE";
@@ -173,3 +230,20 @@ function bookCheck() {
         console.log("a book")
     };
 };
+
+
+
+/* TO DO NEXT
+-Fix broken function: displayBook();
+
+-What it's doing:
+    -Stacking the library when adding to display div
+
+Why it's doing what it's doing:
+    -Function iterates over entire library to display book
+
+Next steps:
+    -Figure out a way to solve this issue
+    -Figure out how to add class/id to new book entries that correspond with their position in myLibrary
+
+*/
