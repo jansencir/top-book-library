@@ -42,7 +42,7 @@ function clearForm() {
     bookForm.reset();
 }
 
-// function displayBook()
+// func displayBook()
 /*
 -Remember:
     -addBookToLibrary adds the form input to library
@@ -62,6 +62,103 @@ function clearForm() {
         -then add edit icon and delete icon
 */
 
+// function displayValues() {
+//     const holderDiv = document.createElement("div");
+// }
+
+// V1
+// ---------------------------------------------------------------
+// div that holds each book entry
+// const outerDiv = document.createElement("div");
+// outerDiv.classList.add("new-entry");
+
+// // title
+// const innerDiv = document.createElement("div");
+// innerDiv.textContent = "random text"
+// innerDiv.classList.add("random-class");
+
+// outerDiv.appendChild(innerDiv);
+
+// // author
+// const innerInnerDiv = document.createElement("div");
+// innerInnerDiv.textContent = "other random text"
+// innerInnerDiv.classList.add("random-other-class")
+
+// outerDiv.appendChild(innerInnerDiv);
+
+// // page count
+// const innerInnerInnerDiv = document.createElement("div");
+// innerInnerInnerDiv.textContent = "20"
+// innerInnerInnerDiv.classList.add("number")
+
+// outerDiv.appendChild(innerInnerInnerDiv);
+
+// // read status
+// const innerInnerInnerInnerDiv = document.createElement("div");
+// innerInnerInnerInnerDiv.textContent = "Not Read"
+// innerInnerInnerInnerDiv.classList.add("number")
+
+// outerDiv.appendChild(innerInnerInnerInnerDiv);
+
+// // edit btn
+// const editImgDiv = document.createElement("div");
+// const editImg = document.createElement("img");
+// editImg.src = "./icons/book-edit-outline.svg";
+// editImgDiv.appendChild(editImg);
+
+// outerDiv.appendChild(editImgDiv);
+
+// // delete btn
+// const deleteImgDiv = document.createElement("div");
+// const deleteImg = document.createElement("img");
+// deleteImg.src = "./icons/book-remove-outline.svg";
+// deleteImgDiv.appendChild(deleteImg);
+
+// outerDiv.appendChild(deleteImgDiv);
+// ---------------------------------------------------------------
+
+
+// V2
+// ---------------------------------------------------------------
+// const outerDiv = document.createElement("div");
+// outerDiv.classList.add("new-entry");
+
+// // title
+// const innerDiv = document.createElement("div");
+// innerDiv.textContent = "random text"
+// innerDiv.classList.add("random-class");
+
+// // author
+// const innerInnerDiv = document.createElement("div");
+// innerInnerDiv.textContent = "other random text"
+// innerInnerDiv.classList.add("random-other-class")
+
+// // page count
+// const innerInnerInnerDiv = document.createElement("div");
+// innerInnerInnerDiv.textContent = "20"
+// innerInnerInnerDiv.classList.add("number")
+
+// // read status
+// const innerInnerInnerInnerDiv = document.createElement("div");
+// innerInnerInnerInnerDiv.textContent = "Not Read"
+// innerInnerInnerInnerDiv.classList.add("number")
+
+// // edit btn
+// const editImgDiv = document.createElement("div");
+// const editImg = document.createElement("img");
+// editImg.src = "./icons/book-edit-outline.svg";
+// editImgDiv.appendChild(editImg);
+
+// // delete btn
+// const deleteImgDiv = document.createElement("div");
+// const deleteImg = document.createElement("img");
+// deleteImg.src = "./icons/book-remove-outline.svg";
+// deleteImgDiv.appendChild(deleteImg);
+
+// outerDiv.append(innerDiv, innerInnerDiv, innerInnerInnerDiv, innerInnerInnerInnerDiv, editImgDiv, deleteImgDiv);
+// ---------------------------------------------------------------
+
+// bookLog.appendChild(outerDiv);
 
 
 // newEntry.textContent = "THE DIV IS RIGHT HERE";
