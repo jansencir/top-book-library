@@ -108,19 +108,16 @@
 }
 
 
-/* Root Styles */
 :root {
-    font-size: 16px;
-}
-
-
-/* Color Codes */
-:root {
+    /* Color Codes */
     --light-blue: #BAE2F9;
     --lighter-light-blue: #E0F3FF;
     --darker-light-blue: #74ACE4;
     --light-pink: #F9DCE5;
     --darker-light-pink: #F5C4D4;
+
+    /* Root Styles */
+    font-size: 16px;
 }
 
 
@@ -152,7 +149,7 @@ body {
 
 .new-book-form {
     display: grid;
-    grid-template-columns: 40% 20% 10% 15% 10%;
+    grid-template-columns: 42% 21% 10% 12% 10%;
     gap: 1%;
 }
 
@@ -210,7 +207,7 @@ fieldset {
 .column-titles,
 .new-entry {
     display: grid;
-    grid-template-columns: 40% 20% 10% 15% 5% 5%;
+    grid-template-columns: 42% 21% 10% 12% 5% 5%;
     gap: 1%;
 }
 
