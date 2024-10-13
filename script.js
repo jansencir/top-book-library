@@ -81,7 +81,8 @@ function displayBook() {
         const deleteImgBtn = document.createElement("button");
         const deleteImg = document.createElement("img");
         deleteImgBtn.classList.add("entry", "delete")
-        deleteImg.src = "./icons/book-remove-outline.svg";
+        deleteImgBtn.setAttribute("onclick", `deleteBook(${i})`)
+        deleteImg.src = "./icons/book-delete-outline.svg";
         deleteImgBtn.appendChild(deleteImg);
 
         newEntryDiv.append(newTitleDiv, newAuthorDiv, newPageDiv, newStatusDiv, toggleImgBtn, deleteImgBtn);
@@ -89,4 +90,13 @@ function displayBook() {
 
         bookLog.appendChild(newEntryDiv);
     }
+};
+
+// function to toggle read status
+
+
+// function to delete book entry
+function deleteBook(index) {
+    myLibrary.splice(index, 1);
+    displayBook();
 };
