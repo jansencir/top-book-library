@@ -35,12 +35,12 @@ function statusSelect() {
             const selectedValue = radioButton.value;
             return selectedValue;
         }
-    }
-}
+    };
+};
 
 function clearForm() {
     bookForm.reset();
-}
+};
 
 function displayBook() {
     bookLog.innerHTML = ""
@@ -90,7 +90,7 @@ function displayBook() {
         newEntryDiv.dataset.index = `book-${i}`;
 
         bookLog.appendChild(newEntryDiv);
-    }
+    };
 };
 
 // function to toggle read status
