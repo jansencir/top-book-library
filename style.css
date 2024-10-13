@@ -231,12 +231,12 @@ fieldset {
     background-color: var(--lighter-light-blue);
 }
 
-.entry-edit,
+.entry-toggle,
 .entry-delete {
     display: flex;
     align-items: center;
 }
 
 img {
-    height: 1.5rem;
+    height: 1.6rem;
 }

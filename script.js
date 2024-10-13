@@ -70,12 +70,12 @@ function displayBook() {
         const newStatusDiv = document.createElement("div");
         newStatusDiv.textContent = book.read;
 
-        // edit button
-        const editImgDiv = document.createElement("div");
-        const editImg = document.createElement("img");
-        editImgDiv.classList.add("entry-edit")
-        editImg.src = "./icons/book-edit-outline.svg";
-        editImgDiv.appendChild(editImg);
+        // toggle button
+        const toggleImgDiv = document.createElement("div");
+        const toggleImg = document.createElement("img");
+        toggleImgDiv.classList.add("entry-toggle")
+        toggleImg.src = "./icons/book-toggle-outline.svg";
+        toggleImgDiv.appendChild(toggleImg);
 
         // delete button
         const deleteImgDiv = document.createElement("div");
@@ -84,7 +84,7 @@ function displayBook() {
         deleteImg.src = "./icons/book-remove-outline.svg";
         deleteImgDiv.appendChild(deleteImg);
 
-        newEntryDiv.append(newTitleDiv, newAuthorDiv, newPageDiv, newStatusDiv, editImgDiv, deleteImgDiv);
+        newEntryDiv.append(newTitleDiv, newAuthorDiv, newPageDiv, newStatusDiv, toggleImgDiv, deleteImgDiv);
         newEntryDiv.dataset.index = `book-${i}`;
 
         bookLog.appendChild(newEntryDiv);
