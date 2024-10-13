@@ -74,6 +74,7 @@ function displayBook() {
         const toggleImgBtn = document.createElement("button");
         const toggleImg = document.createElement("img");
         toggleImgBtn.classList.add("entry", "toggle")
+        toggleImgBtn.setAttribute("onclick", `toggleRead(${i})`)
         toggleImg.src = "./icons/book-toggle-outline.svg";
         toggleImgBtn.appendChild(toggleImg);
 
@@ -93,7 +94,19 @@ function displayBook() {
 };
 
 // function to toggle read status
+Book.prototype.toggleRead = function() {
+    const statusValue = this.read;
+    if (statusValue === "Read") {
+        this.read = "Not Read";
+    } else if (statusValue === "Not Read") {
+        this.read = "Read";
+    };
+};
 
+function toggleRead(index) {
+    myLibrary[index].toggleRead();
+    displayBook();
+};
 
 // function to delete book entry
 function deleteBook(index) {
