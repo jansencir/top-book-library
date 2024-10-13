@@ -171,7 +171,7 @@ legend,
 
 input {
     padding: 0.1rem 0.3rem;
-    border: 2px solid var(--darker-light-pink);
+    border: 0.125rem solid var(--darker-light-pink);
     border-radius: 0.5rem;
 }
 
@@ -188,7 +188,7 @@ fieldset {
     align-self: center;
     width: 100%;
     background-color: #ffffff;
-    border: 1px solid var(--darker-light-pink);
+    border: 0.0625rem solid var(--darker-light-pink);
     border-radius: 1rem;
     font-size: 1rem;
     color: #ffffff;
@@ -211,6 +211,11 @@ fieldset {
     gap: 1%;
 }
 
+.book-toggle,
+.book-delete {
+    text-align: center;
+}
+
 .new-entry {
     background-color: var(--darker-light-blue);
     height: 2rem;
@@ -228,12 +233,26 @@ fieldset {
     background-color: var(--lighter-light-blue);
 }
 
-.entry-toggle,
-.entry-delete {
+.entry {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 0.125rem solid var(--darker-light-pink);
+    border-radius: 0.5rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.entry:hover {
+    background-color: var(--light-pink);
+}
+
+.entry:hover:focus {
+    background-color: #ffffff;
 }
 
 img {
-    height: 1.6rem;
+    height: 1.55rem;
 }
